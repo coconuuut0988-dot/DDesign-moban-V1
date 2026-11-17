@@ -1,0 +1,284 @@
+{
+  "id": "didi-split-identification",
+  "version": "0.3.9",
+  "status": "draft",
+  "coordinateUnit": "mm",
+  "sources": [
+    {
+      "section": "A.5.24",
+      "pages": [
+        141,
+        142,
+        143,
+        144
+      ]
+    },
+    {
+      "section": "A.5.5",
+      "pages": [
+        114
+      ]
+    },
+    {
+      "section": "A.5.1",
+      "pages": [
+        108,
+        109
+      ]
+    }
+  ],
+  "logoProfiles": [
+    {
+      "id": "landscape-a-series",
+      "ratio": [
+        1.32,
+        1.5
+      ],
+      "denominator": 18,
+      "source": "A.5.1"
+    },
+    {
+      "id": "landscape-16-9",
+      "ratio": [
+        1.66,
+        1.88
+      ],
+      "denominator": 16,
+      "source": "A.5.1"
+    },
+    {
+      "id": "portrait-a-series",
+      "ratio": [
+        0.66,
+        0.75
+      ],
+      "denominator": 19,
+      "source": "A.5.1"
+    },
+    {
+      "id": "portrait-rollup",
+      "ratio": [
+        0.41,
+        0.47
+      ],
+      "denominator": 14,
+      "source": "A.5.1"
+    },
+    {
+      "id": "portrait-9-16",
+      "ratio": [
+        0.52,
+        0.6
+      ],
+      "denominator": 15,
+      "source": "A.5.1"
+    }
+  ],
+  "profileNote": "比例匹配区间是首轮试排建议，并非规范原文数值；其他比例采用草稿回退配置并提示。",
+  "policy": {
+    "identificationSloganHeightFactor": 1,
+    "textGapShortRatio": 0.024,
+    "landscapeTextTopRatio": 0.3,
+    "qrShortRatio": 0.12,
+    "imageTreatment": "original"
+  },
+  "policyNote": "S/M/L 图文占比来自 A.5.5；XL 为全画幅。以下固定字号和行数为本 Demo 的模板配置，按成品短边等比换算，不代表规范原文数值。文案变化不会改变字号。 图片按原色显示，不叠加蒙层或自动压暗。",
+  "pending": [
+    "主／次信息口号与通栏横线继续暂缓。",
+    "口号仅作品牌识别，使用已有原始素材。",
+    "模板固定字号、行距与容量为产品试排配置，仍需设计验收。"
+  ],
+  "scope": {
+    "kind": "identification-layouts",
+    "sloganRole": "identification",
+    "orientations": [
+      "landscape",
+      "portrait"
+    ],
+    "deferred": [
+      "primary-slogan",
+      "secondary-slogan",
+      "full-width-slogan-rule"
+    ]
+  },
+  "informationColor": "#FF6600",
+  "defaultSplit": "M",
+  "defaultBrandPillar": "horizontal",
+  "splitPresets": [
+    {
+      "id": "S",
+      "informationFraction": 0.3333333333333333,
+      "informationGridParts": 4,
+      "imageGridParts": 8,
+      "label": "轻信息",
+      "mode": "split"
+    },
+    {
+      "id": "M",
+      "informationFraction": 0.5,
+      "informationGridParts": 6,
+      "imageGridParts": 6,
+      "label": "图文平衡",
+      "mode": "split"
+    },
+    {
+      "id": "L",
+      "informationFraction": 0.6666666666666666,
+      "informationGridParts": 8,
+      "imageGridParts": 4,
+      "label": "信息优先",
+      "mode": "split"
+    },
+    {
+      "id": "XL",
+      "label": "全画幅",
+      "mode": "overlay",
+      "informationFraction": null,
+      "informationGridParts": 12,
+      "imageGridParts": 12
+    }
+  ],
+  "gridParts": 12,
+  "typography": {
+    "referenceShortEdgeMm": 420,
+    "scaleWithTargetSize": true,
+    "overflow": "error",
+    "headlineFamily": "DiDi-HYQiHei-65S",
+    "subtitleFamily": "DiDi-HYQiHei-50S",
+    "bodyFamily": "DiDi-HYQiHei-50S",
+    "headlineLineHeight": 1.13,
+    "subtitleLineHeight": 1.4,
+    "templates": {
+      "S": {
+        "headlineSizeMm": 34,
+        "subtitleSizeMm": 18,
+        "bodySizeMm": 10,
+        "headlineMaxLines": 2,
+        "subtitleMaxLines": 2
+      },
+      "M": {
+        "headlineSizeMm": 50,
+        "subtitleSizeMm": 22,
+        "bodySizeMm": 10,
+        "headlineMaxLines": 2,
+        "subtitleMaxLines": 2
+      },
+      "L": {
+        "headlineSizeMm": 54,
+        "subtitleSizeMm": 24,
+        "bodySizeMm": 10,
+        "headlineMaxLines": 2,
+        "subtitleMaxLines": 2
+      },
+      "XL": {
+        "headlineSizeMm": 54,
+        "subtitleSizeMm": 24,
+        "bodySizeMm": 10,
+        "headlineMaxLines": 2,
+        "subtitleMaxLines": 2
+      }
+    }
+  },
+  "export": {
+    "format": "png",
+    "mimeType": "image/png",
+    "dpi": 100,
+    "densityMetadata": "pHYs",
+    "dimensionPolicy": "preserve-px-convert-mm",
+    "rounding": "nearest-integer",
+    "watermark": false
+  },
+  "input": {
+    "requiredFields": [
+      "title"
+    ]
+  },
+  "delivery": {
+    "formats": [
+      "png"
+    ],
+    "dimensionUnit": "mm",
+    "scale": 1,
+    "pngPpi": 100,
+    "bitmapQuality": {
+      "policy": "warn-only",
+      "referencePpi": 100,
+      "blockExport": false
+    },
+    "finalImagesOnly": true
+  },
+  "assetRegistry": "assets/asset-registry.json",
+  "components": [
+    {
+      "component_id": "brand_logo",
+      "component_type": "fixed_image",
+      "asset_ref": {
+        "asset_id": "didi.chuxing.logo.horizontal.reverse",
+        "version": "1.0.0"
+      },
+      "editable_content": false,
+      "size_basis": "visible_content",
+      "preserve_content_aspect_ratio": true
+    },
+    {
+      "component_id": "brand_slogan_single_line",
+      "component_type": "fixed_image",
+      "asset_ref": {
+        "asset_id": "didi.chuxing.slogan.single-line.reverse",
+        "version": "1.0.0"
+      },
+      "editable_content": false,
+      "size_basis": "visible_content",
+      "preserve_content_aspect_ratio": true
+    },
+    {
+      "component_id": "activity_headline",
+      "component_type": "editable_text",
+      "content_binding": "title",
+      "font_ref": {
+        "asset_id": "didi.font.hyqihei.65s",
+        "version": "1.0.0"
+      },
+      "mapping_status": "user_confirmed"
+    },
+    {
+      "component_id": "activity_subtitle",
+      "component_type": "editable_text",
+      "content_binding": "subtitle",
+      "font_ref": {
+        "asset_id": "didi.font.hyqihei.50s",
+        "version": "1.0.0"
+      },
+      "mapping_status": "user_confirmed"
+    },
+    {
+      "component_id": "activity_details",
+      "component_type": "editable_text",
+      "content_binding": "details",
+      "font_ref": {
+        "asset_id": "didi.font.hyqihei.50s",
+        "version": "1.0.0"
+      },
+      "mapping_status": "proposed"
+    },
+    {
+      "component_id": "main_visual",
+      "component_type": "image",
+      "editable_content": true,
+      "source": "task_input",
+      "input_fields": [
+        "customImage",
+        "mainVisualRef"
+      ],
+      "required": true,
+      "note": "本包不绑定默认活动主视觉。使用本次任务图片地址，或接入方已登记的主视觉资产 ID 与版本。"
+    }
+  ],
+  "unboundComponents": [
+    {
+      "component_id": "qrcode",
+      "reason": "由具体需求传入目标内容或二维码文件，无需将固定示例二维码作为通用品牌资产。"
+    }
+  ],
+  "sourceDocument": "1-WYC视觉体系规范V3.0完整版.pdf"
+}
